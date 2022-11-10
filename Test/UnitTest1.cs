@@ -28,5 +28,16 @@ namespace Test
             Student st = new Student();
             st.Score = -19;
         }
+
+        //
+        [TestMethod]
+        public void getLetterScores_ShouldReturnB()
+        {
+            Student st = new Student();
+            st.Score = 7;
+            char letter = st.getLetterScore();
+            Assert.AreEqual(letter, 'B');
+        }
+
     }
 }
